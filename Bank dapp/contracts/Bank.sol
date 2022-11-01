@@ -18,6 +18,7 @@ contract Bank {
 
     function balanceOf(address account) public view returns (uint256) {
         return _balances[account];
+        // return address(account).balance;
     }
 }
 
